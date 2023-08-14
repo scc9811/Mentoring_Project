@@ -47,4 +47,19 @@ public class UserService {
             return null;
         }
     }
+
+    public boolean updateUserProfile(String userEmail) {
+        Optional<UserEntity> existingUser = userRepository.findByEmail(userEmail);
+
+        if (existingUser != null ) {
+            UserEntity userEntity = existingUser.get();
+            userEntity.setBranch("코딩");
+
+
+            userRepository.save(userEntity);
+            return true; // 성공적으로 업데이트된 경우
+        }
+
+        return false; // 업데이트 실패 (사용자 정보가 잘못되었거나 존재하지 않는 경우)
+    }
 }

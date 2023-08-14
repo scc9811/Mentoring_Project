@@ -11,11 +11,11 @@
 </head>
 
 <body>
-<!-- 알림창 -->
-<div th:if="${showAlert}" class="alert">
-    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    회원가입 실패 (이메일 중복)했습니다.
-</div>
+<!--&lt;!&ndash; 알림창 &ndash;&gt;-->
+<!--<div th:if="${showAlert}" class="alert">-->
+<!--    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>-->
+<!--    회원가입 실패 (이메일 중복)했습니다.-->
+<!--</div>-->
 <div class="container" id="container">
     <div class="form-container sign-up-container">
         <form action="/user/sign_up" accept-charset="UTF-8" id="signup_form" name="signup" method="post" onsubmit="return check()">

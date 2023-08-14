@@ -53,7 +53,7 @@ public class UserController {
         if(loginResult != null){
             // 로그인 성공
             // 앞으로 이 세션 정보를 이용.
-            session.setAttribute("userName", loginResult.getName());
+            session.setAttribute("userEmail", loginResult.getEmail());
             System.out.println("성공!");
             modelAndView.addObject("data", new Message("", "/mainPage"));
 //            return "mainPage";
@@ -61,7 +61,7 @@ public class UserController {
         else{
             // 로그인 실패
             System.out.println("실패!");
-            modelAndView.addObject("data", new Message("실패", "/user/sign_up_in"));
+            modelAndView.addObject("data", new Message("계정 정보가 일치하지 않습니다.", "/user/sign_up_in"));
 //            return "loginHome";
         }
         modelAndView.setViewName("Message");
@@ -73,6 +73,24 @@ public class UserController {
     public String mainPage(){
         return "mainPage";
     }
+
+    @GetMapping("buttonTest")
+    public String buttonTest(HttpSession httpSession){
+        System.out.println(httpSession.getAttribute("userEmail"));
+        return "buttonTest";
+    }
+    @PostMapping("buttonTest")
+    public String save_branch(HttpSession httpSession){
+        if(userService.updateUserProfile((String) httpSession.getAttribute("userEmail"))){
+            System.out.println("업데이트 완료");
+        }
+        else System.out.println("업데이트 실패");
+
+
+
+        return "mainPage";
+    }
+
 
 
 
