@@ -69,9 +69,9 @@ public class UserController {
     }
 
 
-    @GetMapping("mainPage")
-    public String mainPage(){
-        return "mainPage";
+    @GetMapping("mainPage2")
+    public String mainPage2(){
+        return "mainPage2";
     }
 
     @GetMapping("buttonTest")
@@ -86,10 +86,89 @@ public class UserController {
         }
         else System.out.println("업데이트 실패");
 
-
-
         return "mainPage";
     }
+
+    @GetMapping("fstPage")
+    public String fstPage(){
+        return "fstPage";
+    }
+    @GetMapping("mainPage")
+    public String mainPage(){
+        return "mainPage";
+    }
+
+    @GetMapping("test/a1")
+    public String test_a1(){
+        return "test_a1";
+    }
+    @GetMapping("test/a2")
+    public String test_a2(){
+        return "test_a2";
+    }
+    @GetMapping("test/a3")
+    public String test_a3(){
+        return "test_a3";
+    }
+    @GetMapping("test/a4")
+    public String test_a4(){
+        return "test_a4";
+    }
+    @GetMapping("test/a5")
+    public String test_a5(){
+        return "test_a5";
+    }
+    @GetMapping("test/a6")
+    public String test_a6(){
+        return "test_a6";
+    }
+    @GetMapping("test/a7")
+    public String test_a7(){
+        return "test_a7";
+    }
+    @GetMapping("test/a8")
+    public String test_a8(){
+        return "test_a8";
+    }
+
+    @GetMapping("test/q1")
+    public String test_q1(){
+        return "test_q1";
+    }
+    @GetMapping("test/q2")
+    public String test_q2(){
+        return "test_q2";
+    }
+    @GetMapping("test/q3")
+    public String test_q3(){
+        return "test_q3";
+    }
+    @GetMapping("test/q4")
+    public String test_q4(){
+        return "test_q4";
+    }
+    @GetMapping("test/q5")
+    public String test_q5(){
+        return "test_q5";
+    }
+    @GetMapping("test/q6")
+    public String test_q6(){
+        return "test_q6";
+    }
+    @GetMapping("test/q7")
+    public String test_q7(){
+        return "test_q7";
+    }
+    @GetMapping("test/main")
+    public String test_main(){
+        return "test_main";
+    }
+    @GetMapping("test/a_list")
+    public String test_a_list(){
+        return "test_a_list";
+    }
+
+
 
 
 

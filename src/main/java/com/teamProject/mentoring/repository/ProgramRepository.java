@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface ProgramRepository extends JpaRepository<ProgramEntity, Long> {
     List<ProgramEntity> findByCategory(String programCategory);
-    
+
 
 }
