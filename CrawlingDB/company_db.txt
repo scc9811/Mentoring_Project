@@ -1,0 +1,9 @@
+name	type	address
+CJ 올리브네트웍스	IT	https://www.cjolivenetworks.co.kr/sustainability/contribution/education
+KTds	예체능, IT	https://www.ktds.com/company/social_01.jsp
+러빙핸즈	생활지도	https://lovinghands.or.kr/71
+서울런	국영수, 독서	https://slearn.seoul.go.kr/front/mentoringIntro.do
+심지	자아, 독서	https://simjipioneer.modoo.at/?link=4unlke1w
+포스코에너지	과학키트	http://www.poscoenergy.com/_service/pr/news/view.asp?idx=481&no=184&page=1
+한국토지주택공사	생활지도, 국영수	https://lhggoma.co.kr/
+현대차그룹	생활지도, 국영수	https://h-jumpschool.kr/
