@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/test_q.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <title>Document</title>
+    <title>Mench</title>
+    <link rel="stylesheet" href="/main.css">
+    <script defer src="/main.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="inner">
+    
+          <a href="" class="logo">
+            <img src="../images/logo.png" alt="Mench">
+          </a>
+    
+          <div class="sub-menu">
+           
+            <a th:href="@{/fstPage}" class="log-out">
+              <div class="material-symbols-outlined">
+                logout
+              </div>
+            </a>
+          </div>
+    
+        </div>
+      </header>
     <div class="q">
         <div class="logo">Mench</div>
-        <div class="img_q"><img src="../images/ex1.jpg" alt="My Image"></div>
+        <div class="img_q"><img src="../images/undraw_Cooking_p7m1.png" alt="My Image"></div>
         <h1>나는 학교</h1>
         <div class="a_q">
             <a th:href="@{/test/q3}">
@@ -23,6 +43,15 @@
             </a>
         </div>
     </div>
+
+    <script>
+      $(".logo").click(function(){
+        if(confirm("지금까지의 검사 기록이 저장되지 않습니다. 홈으로 돌아가시겠습니까?")){
+        $(this).attr("href", "/mainPage");
+    }
+  });
+    </script>
+
 </body>
 
 </html>

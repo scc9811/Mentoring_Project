@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Center List</h1>
+  <ul>
+    <li th:each="center : ${centerList}">
+        <p>
+            <span th:text="${center.ID}"></span>. 센터명 : <span th:text="${center.name}"></span> <br>
+            센터 위치, 시간 : <span th:text="${center.info}"></span> <br>
+            프로그램 : <span th:text="${center.program}"></span> <br>
+        </p>
+
+    </li>
+  </ul>
+
+</body>
+</html>
